@@ -206,8 +206,9 @@ public class SimpleLinkedList<T>
             IllegalStateException
         {
           failFast();
-          // STUB
-          throw new UnsupportedOperationException();
+          this.cursor.data = val;
+          SimpleLinkedList.this.mods++;
+          this.mods = SimpleLinkedList.this.mods;
         } // set(T)
       };
   } // listIterator()
